@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-31T14:11:24.948Z",
+    "end": "2024-10-31T14:11:30.282Z",
+    "duration": 5334,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aad0674b-9b5b-4f28-a93b-3ce6c2da4797",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Caso01QALuma.cy.js",
+      "file": "cypress\\e2e\\Caso01QALuma.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "05a5b894-25a6-4014-89e4-eac96ed8043a",
+          "title": "QA Luma",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar o Carregamento da página",
+              "fullTitle": "QA Luma Validar o Carregamento da página",
+              "timedOut": null,
+              "duration": 5298,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.url().should('include', '/');\ncy.get('img[src=\"https://magento.softwaretestingboard.com/pub/static/version1695896754/frontend/Magento/luma/en_US/images/logo.svg\"]').should('be.visible');",
+              "err": {},
+              "uuid": "c546e0da-22e9-4566-a3ac-b6881b666e89",
+              "parentUUID": "05a5b894-25a6-4014-89e4-eac96ed8043a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c546e0da-22e9-4566-a3ac-b6881b666e89"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "[name]-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

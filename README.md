@@ -1,65 +1,52 @@
-# Q.A Challenge Luma Store
+1- Utilizei a ferramenta de automação chamada Cypress, Instalada na ultima versão
+Foi escolhido essa ferramenta, por 2 motivos!
+1-Meus conhecimento estão ligados a ela!
+2-A ferramenta tem um desempenho e uma facilidade melhor para produzir testes automatizados comparado as outras ferramentas!
 
-Este é um desafio para que possamos ver as suas habilidades como QA/Tester.
+----------------------------------
 
-Nesse desafio você deverá testar de forma automatizada o site Luma Store. O projeto a ser desenvolvido por você tem como objetivo exibir executar ações na loja conforme indicado nos casos de uso que estão logo abaixo.
+2-Não instalei plugins de cucumber pois em boas práticas não se utiliza esse plugins no cypress, até porque a linguagem oferece boas explicações
+na hora de executar seus testes, esta tudo bem explicado o que cada caso vai executar de ação!
 
-[SPOILER] As instruções de entrega e apresentação do challenge estão no final deste Readme (=
+--------------------------------
 
-### Antes de começar
+3-Foi realizado as duas tarefas obrigátorias como:
+
+ it'Filtrar no campo de pesquisa por Shirt e faze checkout de um produto, Validando algumas opções'
+ Esse primeiro cenário faz todo o teste da tarefa obrigatória onde diz o cenário:
+
+ -visitar na pagina
+ -clicar no campo de pesquisa principal
+ -filtrar pela categoria shirt
+-Adiciona o produto no carrinho informando tamanho e cores.
+-Realiza o procedimento de checkout até o final
+
+-----------------------------------------
+
+4-Tivemos os cenários de cada diferencial conforme a pasta chamada cypress > e2e > Caso01QALuma.cy.js é nesse arquivo onde é executado os testes
+
+
+--------------------------------------------
+
+5- Foi instalado o relatorio chamado moca , Esta configurado para funcionar da seguinte forma...
+
+No terminal digite o comando 'npm run test' assim a pasta reports será apagada, e ao finalizar o teste sera criada uma nova pasta com os arquivos html
+do resultado de teste, basta achar o local do arquivo na pasta do projeto e executar no navegador!
+
+-----------------------------------------------
+
+Para instalar e funcionar o projeto, Precisa ter um vs code , criar uma pasta qualquer apenas para instalar as ferramentas como 
+
+Vs code - Node - Cypress
+
+Para instalar o cypres digite, npm init -y e depois npm install cypress .. Assim que a instalação for conclúida, Digitamos o comando npx cypress open
+para abrir o cypress e escolher um navegador para executar os testes!
+
+--------------------------------------------------
+Depois basta abrir um VS code com a pasta do projeto onde esta o QALuma e executar conforme comentado!
+
+---------------------------------------------------
+
+
+
  
-- Considere como prazo limite da avaliação o período a partir do início do teste. Se, por algum motivo, não for possível concluir dentro deste prazo, avise a pessoa que o convidou para receber instruções sobre o que fazer.
-- Documente todo o processo de investigação para o desenvolvimento da atividade (README.md no seu repositório); os resultados destas tarefas são tão importantes quanto o seu processo de pensamento e decisões à medida que as completa, por isso, tente documentar e apresentar as suas hipóteses e decisões na medida do possível.
-
-
-#### Tecnologias:
-- Ferramenta: Ghost Inspector, Selenium, Cypress, Robot Framework, ou outro de seu conhecimento
-- Adicionais: Cucumber ou outros plugins necessários para configurar a ferramenta
-
-## Teste
-
-Neste desafio aplicaremos os conceitos de teste caixa preta, onde testaremos a página https://magento.softwaretestingboard.com
-
-> Nota: utilize dados fictícios criados através do site https://randomuser.me
-
-**Obrigatório 1** - Para realizar o teste precisamos escolher a ferramenta de teste. Explicar o por quê da escolha, as vantagens e desvantagens dos que não foram escolhidos.
-
-**Obrigatório 2** - Você deverá atender aos seguintes casos de uso:
-
-- Se a página está carregando corretamente a home page;
-- Buscar por `shirt` no menu superior e revisar se a página de resultados carregou corretamente. Veja o diferencial 1 para incrementar este caso de uso;
-- Adicionar um produto no carrinho
-- Realizar checkout
-
-### Diferenciais
-Além do que foi solicitado, existem itens adicionais para incrementar o projeto final. Você também pode adicionar algum recurso não citado anteriormente.
-
-- **Diferencial 1** - Buscar por `shirt` no menu superior e clicar no último resultado sugerido. Se possível, escute o retorno da requisição para saber o momento de clicar na interface;
-- **Diferencial 2** - Criar uma conta na tela de Login/Cadastro. Observe que existe um captcha no formulário, então é necessário decidir como abordar este campo;
-- **Diferencial 3** - Adicionar um produto **aleatório** do catalogo de moda masculina no carrinho;
-- **Diferencial 4** - Adicionar comentário em um produto **aleatório** do catálogo de moda masculina no carrinho;
-- **Diferencial 5** - Gerar um relatório automático do teste.
-
-## Readme do Repositório
-
-- Deve conter o título do projeto
-- Uma descrição sobre o projeto em frase
-- Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- Como instalar e usar o projeto (instruções)
-- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- Se está usando github pessoal, referencie que é um challenge by coodesh:  
-
->  This is a challenge by [Coodesh](https://coodesh.com/)
-
-## Finalização e Instruções para a Apresentação
-
-1. Adicione o link do repositório com a sua solução no teste
-2. Verifique se o Readme está bom e faça o commit final em seu repositório;
-3. Envie e aguarde as instruções para seguir. Sucesso e boa sorte. =)
-
-## Suporte
-
-Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
-
-
-Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
